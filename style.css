@@ -1,0 +1,22 @@
+body{
+  background-color: #4C934C;
+  font-family: Garamond;
+  
+}
+h1{
+  color: #19381F;
+  text-align: center;
+}
+
+/*Seperate styling for different headers and the navigation bar text.*/
+nav,p,ul,h3,h6{
+  color: #EEE82C;
+  text-align: left;
+}
+
+img {
+ width: 300px;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
