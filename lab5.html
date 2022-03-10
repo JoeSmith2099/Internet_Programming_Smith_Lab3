@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Smith Lab 5</title>
+      <link href ="style.css" rel="stylesheet" type ="text/css"/>
+       </head>
+  <body>
+    <div class = "grid">
+      <header class = "header"><h1>Lab 5</h1>
+        <img src ="images/rsz_logo.png"></header>
+      <main class ="main">
+        <form method ="post" action = "https://webdevbasics.net/scripts/yoga.php">
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname"><br>
+          <label for="email">Email:</label><br>
+          <input type="text" id="email" name="email"><br><br>
+          <label for= "state">State:</label><br>
+          <select id="state">
+              <option>GA</option>
+              <option>AL</option>
+              <option>FL</option>
+          </select><br><br>
+          <label for= "marr_status">Marital Status:</label><br>
+          <input type="radio" name="marr_status" value="single">Single<br>
+          <input type="radio" name="marr_status" value="married">Married<br>
+          <input type="radio" name="marr_status" value="complicated">Other<br><br>
+          <label for= "skills">Skills:</label><br>
+          <input type="checkbox" name="skills" value="java">Java<br>
+          <input type="checkbox" name="skills" value="none">Scratch<br>
+          <input type="checkbox" name="skills" value="python">Python<br><br>
+          <label for="comments">Comments:</label><br>
+          <input type ="text" size="69"><br><br>
+          <button>Submit</button>
+          <input type ="reset" value ="Reset">
+        </form>
+      </main>
+        <nav class = "nav"> 
+      <ul>
+        <div class = "button"><li><a href = "index.html">Home</a></li></div>
+        <div class ="button"><li><a href="lab1.html">The First Lab </a></li></div>
+        <div class ="button"><li><a href ="lab2.html">The Second Lab</a></li></div>
+        <div class ="button"><li><a href ="lab3.html">The Third Lab</a></li></div>
+        <div class ="button"><li><a href = "lab4.html">The Fourth Lab</a></li></div>
+        <div class ="button"><li><a href = "lab6.html">The Sixth Lab</a></li></div>
+      </ul></nav>
+      <footer class="footer">
+         <p>Contact Us:<br><br>Phone - (458)-567-4234<br>Email - billybob@email.com </p>
+         <p>Page Last Modified: <span id="update_date"></span></p>
+      </footer>
+   </div>    
+  <script src="script.js"></script>
+  </body>
+</html>

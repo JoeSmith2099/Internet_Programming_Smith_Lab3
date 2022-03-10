@@ -2,37 +2,43 @@
 <html>
   <head>
     <title>Smith Lab 2</title>
-          <link href ="style.css" rel="stylesheet" type ="text/css"/>
+      <link href ="style.css" rel="stylesheet" type ="text/css"/>
        </head>
   <body>
-    <header><h1>Lab 2</h1>
-    <img src ="/images/Logo.png">
-    </header>
-    <nav>
-     <ul>
-      <li><a href = "index.html">Home</a></li> 
-      <li><a href = "lab1.html">The First Lab</a></li>
-	  <li><a href = "lab3.html">The Third Lab</a></li>
-    </ul>
-	</nav>
-    <main>
-    
-
-  <h3>Lab 2 Instructions</h3>
-<p>You will log into your repl.it account, fork your lab 1 repl.it to create a Repl.it for lab two. Copy index and rename it lab 2. Create a new page for lab 2. Then you will write code to turn index.html into the main page of a labs portfolio. Add navigation hyperlinks so the user can surf to all lab pages and back to index. The navigation should be on every page. Put the instructions for lab 1 on the lab 1 page. Put the instructions for lab 2 on the lab 2 page. Remember all text needs to be in a tag. On the index page add some text saying welcome to your CPSC 2125 Labs 1-6 portfolio. You fork and add to this for labs 3, 4, 5, and 6. 
-To submit your work, get the shareable link (use the invite button to generate a join link) and paste it into the submission box in CougarView.</p>
-<p>Grading Checklist: </p>
-  <ul>
-    <li>index page that is the welcome page for your CPSC 2125 labs 1-6 portfolio</li>
-    <li>lab 1 page has HTML you wrote for lab 1 and the lab 1 instructions</li>
-    <li>lab 2 page has instructions for lab 2</li>
-    <li>All three pages have a navigation bar (list of navigation links) that lets you get to the other two pages</li>
-    <li>All text is contained in a tag (no stray text), all tags are closed; remember the DOM!</li>
-    <li>Repl.it link uploaded to CougarView</li>
-  </ul>
-<p>This video will help if you have any questions: <a href="https://www.youtube.com/watch?v=pVdg9JpeHMc">Lab 2 instruction video</a>
-  </p>
-  </main>
-  <footer></footer>
+    <div class = "grid">
+      <header class = "header"><h1>Lab 2</h1>
+        <img src ="images/rsz_logo.png"></header>
+      <main class = "main"> <h3>Lab 2 Instructions</h3>
+        <p>You will log into your repl.it account, fork your lab 1 repl.it to create a Repl.it for lab two. Copy index and rename it lab 2. Create a new page for lab 2. Then you will write code to turn index.html into the main page of a labs portfolio. Add navigation hyperlinks so the user can surf to all lab pages and back to index. The navigation should be on every page. Put the instructions for lab 1 on the lab 1 page. Put the instructions for lab 2 on the lab 2 page. Remember all text needs to be in a tag. On the index page add some text saying welcome to your CPSC 2125 Labs 1-6 portfolio. You fork and add to this for labs 3, 4, 5, and 6. 
+          To submit your work, get the shareable link (use the invite button to generate a join link) and paste it into the submission box in CougarView.</p>
+        <p>Grading Checklist: </p>
+          <div class = "lab2_list">
+          <ul>
+            <li>index page that is the welcome page for your CPSC 2125 labs 1-6 portfolio</li>
+            <li>lab 1 page has HTML you wrote for lab 1 and the lab 1 instructions</li>
+            <li>lab 2 page has instructions for lab 2</li>
+            <li>All three pages have a navigation bar (list of navigation links) that lets you get to the other two pages</li>
+            <li>All text is contained in a tag (no stray text), all tags are closed; remember the DOM!</li>
+            <li>Repl.it link uploaded to CougarView</li> 
+          </ul>
+          </div>
+        <p>This video will help if you have any questions: <a href="https://www.youtube.com/watch?v=pVdg9JpeHMc">Lab 2 instruction video</a>
+          </p></main>
+      <nav class = "nav"> 
+      <ul>
+        <div class ="button"><li><a href="index.html">Home</a></li></div>
+        <div class ="button"><li><a href="lab1.html">The First Lab </a></li></div>
+        <div class ="button"><li><a href ="lab3.html">The Third Lab</a></li></div>
+        <div class ="button"><li><a href = "lab4.html">The Fourth Lab</a></li></div>
+        <div class ="button"><li><a href = "lab5.html">The Fifth Lab</a></li></div>
+        <div class ="button"><li><a href = "lab6.html">The Sixth Lab</a></li></div>
+      </ul></nav>
+    </div>
+     <footer class="footer">
+         <p>Contact Us:<br><br>Phone - (458)-567-4234<br>Email - billybob@email.com </p>
+         <p>Page Last Modified: <span id="update_date"></span></p>
+     </footer>
+  </div>
+<script src="script.js"></script>
   </body>
 </html>

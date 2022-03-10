@@ -1,22 +1,109 @@
 body{
-  background-color: #4C934C;
-  font-family: Garamond;
-  
+  padding: 10px
 }
+
 h1{
-  color: #19381F;
+  color: #3D0000;
   text-align: center;
 }
 
 /*Seperate styling for different headers and the navigation bar text.*/
-nav,p,ul,h3,h6{
-  color: #EEE82C;
-  text-align: left;
+p,h3,h6,li{
+  text-align: center;
+  list-style: none;
+
 }
 
+/* Configurations for the banner image*/
 img {
  width: 300px;
  display: block;
  margin-left: auto;
  margin-right: auto;
+}
+
+/* Gives attributes to the areas of the grid*/ 
+.header {
+  grid-area: header;
+  background-color: #FF0000;
+  color:#3D0000;
+}
+.main {
+  grid-area: main;
+ background-color: #FF0000;
+  color:#3D0000;
+}
+.nav {
+  grid-area: nav;
+  background-color: #FF0000;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #FF0000;
+  color:#3D0000;
+}
+
+/*Creates and provides the rows and spacing for the grid*/
+.grid{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: 
+  'header header header'
+  'nav main main'
+  'footer footer footer';
+}
+
+.nobullets{
+  list-style: none;
+}
+
+/* Color correction for the list on the lab 2 page*/
+.lab2_list{
+  color: #3D0000;
+  background-color: #FF0000;
+}
+
+
+/* Styling for the list of ingredients on lab 4*/
+.ingredients_list{
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+}
+
+/*coloring for the types of ingredients*/
+.veg{
+  background-color: green;
+}
+
+.meat{
+  background-color: red;
+}
+
+.dairy{
+  background-color: yellow;
+}
+
+.condiments{
+  background-color: lightsalmon;
+}
+
+.instructions{
+  font-style: italic;
+  text-align: center; 
+}
+
+.title{
+  font-family: 'Courier New', Courier, sans-serif ;
+}
+
+/*This highlights the elements in the page navigation bar when hovered over witht he cursor */
+a:hover{
+background-color: #000000;
+}
+
+/*Removing the bulletpoints from all of the lists */ 
+.nav_ul{
+ list-style-type: none;
 }
